@@ -1,0 +1,22 @@
+ALGORITHM checkpoint algo
+VAR
+nt , nw , nv ,i : INTEGER :=0 ;
+    ch : STRING ;
+BEGIN
+
+    read(ch);
+    for (i to ch.length-2) 
+       if ch[i]=' ' then
+         nw=nw+1;
+         else if (ch[i] in ["a","A", "e", "E", "o", "O", "y", "Y" "u","U" "i", "I"]) then
+         nv=nv+1;
+         end if;
+         end for;
+      write("The length of the sentence :", i+1 );
+      write("The number of vowels in the sentence :", nv );
+     write("The number of words in the sentence :", nw+1 );
+
+END.
+
+
+           
